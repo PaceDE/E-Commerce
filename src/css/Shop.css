@@ -8,10 +8,8 @@
 }
 
 .main-body .container .container-left .top-bar {
-    display: flex;
-    max-height: 50px;
+    text-align: center;
     margin-bottom: 50px;
-    position: relative;
 }
 
 .main-body .container .container-left .top-bar div i {
@@ -20,13 +18,13 @@
 }
 
 .main-body .container .container-left .result-no {
-    position: absolute;
-    left: 25%;
+    
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 100%;
     line-height: 27px;
     color: #020F06;
+    margin-bottom: 20px;
 }
 
 .main-body .container .container-left .result-no p {
@@ -46,8 +44,6 @@
     font-weight: 600;
     font-size: 13px;
     line-height: 40px;
-    position: absolute;
-    right: 10px;
 }
 .item-box-wrapper {
     display: flex;
@@ -261,19 +257,19 @@
     line-height: 21px;
 }
 
-.main-body .container .miscellaneous .search-ob {
+.main-body .container .miscellaneous .search-box {
     max-height: 141.6px;
     background: #ffffff;
     padding: 20px;
     box-shadow: 5px 5px 5px -5px;
 }
 
-.main-body .miscellaneous .search-ob .ob-search {
+.main-body .miscellaneous .search-box .search-product {
     margin-top: 20px;
     min-height: 60px;
 }
 
-.miscellaneous .search-ob .ob-search .ob {
+.miscellaneous .search-box .search-product .object-name {
     background: transparent;
     border: solid 1px #EEEEEE;
     width: 75%;
@@ -290,7 +286,7 @@
 
 }
 
-.search-ob .ob-search input::placeholder {
+.search-box .search-product input::placeholder {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -298,12 +294,12 @@
     color: #1E1D24;
 }
 
-.search-ob .ob-search input:focus {
+.search-box .search-product input:focus {
     transition: all ease-in-out 0.5s;
     border: solid 1px #679509;
 }
 
-.search-ob .ob-search .search-button {
+.search-box .search-product .search-button {
     width: 50px;
     height: 50px;
     background: transparent;
@@ -463,28 +459,44 @@
     text-decoration: none;
 }
 
-.main-body .container .page-no {
+.main-body .container .pagination-control {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.main-body .container .page-no a {
+.main-body .container .pagination-control button{
     color: #333333;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    background: #FFFFFF;
+    background: #EAEAEA;
     padding: 9px 16px;
     margin-right: 10px;
 }
+.main-body .container .pagination-control span
+{
+    color: #333333;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
 
-.main-body .container .page-no a:nth-child(3),
-.main-body .container .page-no a:hover {
+}
+
+
+.main-body .container .pagination-control button:nth-child(1),
+.main-body .container .pagination-control button:last-child,
+.main-body .container .pagination-control .active,
+.main-body .container .pagination-control button:hover {
     background: #679509;
     color: #FFFFFF;
-    text-decoration: none;
+}
+.main-body .container .pagination-control button:nth-child(1):hover,
+.main-body .container .pagination-control button:last-child:hover,
+.main-body .container .pagination-control .active:hover
+{
+    background: #2a660a;
 }
 
 
@@ -701,19 +713,15 @@
         margin-left: 25%;
     }
 
-    .main-body .container .container-left .sorting {
-        display: none;
-    }
-        .item-box-container {
+     .item-box-container {
             flex: 0 1 100%;
             /* 1 item per row on small screens */
-        }
-        
+        }   
 }
 
 
 @media(max-width:412px) {
-    .main-body .container .container-left .page-no a {
+    .main-body .container .container-left .pagination-control button {
         font-size: 11px;
     }
 
@@ -728,7 +736,7 @@
 }
 
 @media(max-width:335px) {
-    .main-body .container .container-left .page-no a {
+    .main-body .container .container-left .pagination-control button {
         font-size: 9px;
     }
 

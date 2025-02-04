@@ -2,17 +2,17 @@ import React from "react";
 
 const SearchBox = () => {
   return (
-    <div className="search-ob">
+    <div className="search-box">
       <div className="text">
-        <h6>Search Objects</h6>
+        <h6>Search Productss</h6>
       </div>
-      <div className="ob-search">
+      <div className="search-product">
         <form action="#">
           <input
             type="text"
             name="search"
             placeholder="Enter Keyword"
-            className="ob"
+            className="object-name"
           />
           <button type="submit" className="search-button">
             <i className="bi bi-search"></i>

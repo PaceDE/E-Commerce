@@ -16,10 +16,9 @@ const ProductCategory = () => {
       </div>
       <div className="category-list">
         {categories.map((category, index) => (
-          <a href="/">
-            <li key={index}>+ {category}</li>
+          <a href="/" key={index}>
+            <li>+ {category}</li>
           </a>
-    
         ))}
       </div>
     </div>

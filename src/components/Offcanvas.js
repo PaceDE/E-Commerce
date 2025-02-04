@@ -6,7 +6,7 @@ const Offcanvas = () => {
   return (
     <div
       className="offcanvas fixed inset-0 z-50 bg-white shadow-lg transform transition-transform duration-300 ease-in-out translate-x-full sm:translate-x-0 w-[340px] right-0"
-      tabindex="-1"
+      tabIndex="-1"
       id="offcanvas"
       aria-labelledby="offcanvasWithBothOptionsLabel"
       data-bs-scroll="true"

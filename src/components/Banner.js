@@ -15,7 +15,7 @@ function Banner({bgName,pageTitle}) {
         <h3>{pageTitle}</h3>
         <span>
           <a href="/">HOME &nbsp;</a>
-          <i class="bi bi-chevron-double-right"></i> &nbsp; {pageTitle}
+          <i className="bi bi-chevron-double-right"></i> &nbsp; {pageTitle}
         </span>
       </section>
     </>

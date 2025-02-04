@@ -51,14 +51,18 @@ const CategorySelect = () => {
 
 const SearchBar = () => (
   <div className="search-container">
-    <input
-      type="text"
-      placeholder="Search Products..."
-      className="search-input"
-    />
-    <button className="search-btn">
-      <i className="bi bi-search"></i>
-    </button>
+   
+      <input 
+        type="text"
+        placeholder="Search Products..."
+        className="search-input"
+        name="search"
+        />
+      <button className="search-btn">
+        <i className="bi bi-search"></i>
+      </button>
+   
+    
   </div>
 );
 
